@@ -36,8 +36,7 @@ $beers = $query->fetchALL();
 
 <body>
 <div class="topnav">
-    <a class="addbeer" href="#addbeer">Add to Collection</a>
-
+    <a class="addbeer" href="#addbeer">Add to Collection </a>
 
 </div>
 
@@ -62,10 +61,40 @@ $beers = $query->fetchALL();
     }
     echo $html;
     ?>
+
 </div>
 
 <h3>Add to Collections
     <h3>
-        <h4>Cheers, save my beer</h4>
+        <div id="addbeer" class="addtocollection">
+            <form method="POST" action="form.php">
+                <p>
+                    <label for="brewery">Brewery </label>
+                    <input type="text" name="brewery" id="brewery">
+                </p>
+                <p>
+                    <label for="beer">Beer </label>
+                    <input type="text" name="beer" id="beer">
+                </p>
+                <p>
+                    <label for="abv">ABV</label>
+                    <input type="text" name="abv" id="abv">
+                </p>
+                <p>
+                    <label for="style">Style </label>
+                    <input type="text" name="style" id="style">
+                </p>
+                <p>
+                    <label for="country">Country </label>
+                    <input type="text" name="country" id="country">
+                </p>
+                <p>
+                    <label for="rating">Rating</label>
+                    <input type="text" name="rating" id="rating">
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
+                </p>
+            </form>
 </body>
 </html>

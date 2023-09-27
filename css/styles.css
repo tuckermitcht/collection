@@ -35,7 +35,7 @@ p {
     flex-direction: row;
     font-size: 30px;
     justify-content: center;
-    background-color: #e3908a;
+    background-color: #b08582;
     font-weight: 900;
     position: fixed;
     padding: 0.7rem;
@@ -60,8 +60,9 @@ padding-top: 4rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #4a4949;
     height: auto;
-    margin: 0;
-
+    margin: 2rem;
+    border: 10px solid red;
+    border-color: #D8B589 ;
 
 }
 
@@ -75,7 +76,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.addtocollection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (min-width: 600px) {
