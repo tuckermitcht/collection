@@ -12,7 +12,7 @@ body {
     font-family: 'Germania One', cursive;
     font-size: 30px;
     background-color: #e3908a;
-    color: #F9FBDD;
+    color: #1d1c1a;
 }
 
 h1,
@@ -22,11 +22,23 @@ p {
 }
 
 .addbeer {
-    color: #F9FBDD;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    border: 2px solid #7d6d5e;
+    background: #C9E4DE;
+    border-radius: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
 }
-
+h2 {
+    text-align: center;
+}
 .looking {
-    color: #F9FBDD;
+    color: #635147;
 }
 
 .topnav {
@@ -35,7 +47,7 @@ p {
     flex-direction: row;
     font-size: 30px;
     justify-content: center;
-    background-color: #b08582;
+    background-color: #e3908a;
     font-weight: 900;
     position: fixed;
     padding: 0.7rem;
@@ -44,25 +56,48 @@ p {
 
 h1 {
     text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #4a4949;
-    padding-top: 4rem;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    border: 5px solid red;
+    border-color: #7d6d5e;
+    background: #C9E4DE;
+    border-radius: 25px;
+    margin: 80px 70px 0px 70px;
 }
 
 .breweryname {
     padding-top: 2rem;
 }
 
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #4a4949;
+    gap: 1rem;
     height: auto;
     margin: 2rem;
-    border: 10px solid red;
-    border-color: #D8B589;
+    border: 5px solid #7d6d5e;
+    background: #C9E4DE;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    border: 5px solid #7d6d5e;
+    background: #F7D9C4;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 img {
@@ -75,17 +110,92 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 5px solid white;
+    border: 5px solid red;
+    border-color: #7d6d5e;
+    background: #F7D9C4;
+    border-radius: 25px;
+
 }
 
 .addtocollection {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+    border: 5px solid white;
+    border: 5px solid red;
+    border-color: #7d6d5e;
+    background: #F7D9C4;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#addbeerform {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#addbeerform #submit {
+    margin-top: 1.5rem;
+    border: 5px solid #7d6d5e;
+    background: #C9E4DE;
+    border-radius: 10px;
+    height: 3rem;
+
+}
+
+input {
+    border: 5px solid #7d6d5e;
+    background: #C9E4DE;
+    border-radius: 10px;
+    height: 2rem;
+
 }
 
 @media only screen and (min-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+
+    .addtocollection {
+        background: #F7D9C4;
+        border-radius: 25px;
+        padding: 20px;
+        margin-right: 8rem;
+        margin-left: 8rem;
+    }
+
+    #addbeerform {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    h3 {
+        padding: 20px;
+        margin-right: 8rem;
+        margin-left: 8rem;
+    }
+
+    #addbeerform #submit {
+        grid-column: 1 / 3;
+    }
+
+    h1 {
+        text-align: center;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white;
+        border: 5px solid red;
+        border-color: #7d6d5e;
+        background: #C9E4DE;
+        border-radius: 25px;
+        margin-top: 5rem;
+        margin-right: 8rem;
+        margin-left: 8rem;
     }
 }

@@ -61,34 +61,29 @@ $beers = $query->fetchALL();
 
 <h3>Add to Collections</h3>
 <div id="addbeer" class="addtocollection">
-    <form method="POST" action="form.php">
-        <p>
-            <label for="brewery">Brewery </label>
-            <input type="text" name="brewery" id="brewery">
-        </p>
-        <p>
-            <label for="beer">Beer </label>
-            <input type="text" name="beer" id="beer">
-        </p>
-        <p>
-            <label for="abv">ABV</label>
-            <input type="text" name="abv" id="abv">
-        </p>
-        <p>
-            <label for="style">Style </label>
-            <input type="text" name="style" id="style">
-        </p>
-        <p>
-            <label for="country">Country </label>
-            <input type="text" name="country" id="country">
-        </p>
-        <p>
-            <label for="rating">Rating</label>
-            <input type="text" name="rating" id="rating">
-        </p>
-        <p>
-            <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
-        </p>
+    <form id='addbeerform' method="POST" action="processform.php">
+        <label for="brewery">Brewery </label>
+        <input type="text" name="brewery" id="brewery">
+
+        <label for="beer">Beer</label>
+        <input type="text" name="beer" id="beer">
+
+        <label for="abv">ABV</label>
+        <input type="text" name="abv" id="abv">
+
+        <label for="style">Style </label>
+        <input type="text" name="style" id="style">
+
+        <label for="country">Country </label>
+        <input type="text" name="country" id="country">
+
+        <label for="rating">Rating</label>
+        <input type="text" name="rating" id="rating">
+
+        <label for="image">Image link </label>
+        <input type="text" name="image" id="image">
+
+        <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
     </form>
 </div>
 </body>
