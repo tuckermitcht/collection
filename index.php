@@ -36,9 +36,9 @@ $beers = $query->fetchALL();
 
 <body>
 <div class="topnav">
-    <a class="active" href="#addbeer">Add to Collection</a>
-    <a href="#contact">Looking for a beer</a>
-    <input type="text" placeholder="Search..">
+    <a class="addbeer" href="#addbeer">Add to Collection</a>
+
+
 </div>
 
 <div id="project-wrapper">
@@ -51,13 +51,13 @@ $beers = $query->fetchALL();
     $html = "";
     foreach ($beers as $beer) {
         $html .= '<div class="column">'
-            . '<h2>' . $beer['breweryname'] . '</h2>'
-            . '<h2> <a>' . $beer['beername'] . '</a></h2>'
+            . '<h2 class="breweryname">' . $beer['breweryname'] . '</h2>'
+            . '<h2> ' . $beer['beername'] . '</h2>'
             . '<img src="' . $beer['imgsource'] . '" alt=beer>'
-            . '<p>' . $beer['ABV'] . '</p>'
-            . '<p>' . $beer['comment'] . '</p>'
-            . '<p>' . $beer['year'] . '</p>'
-            . '<p>' . $beer['style'] . '</p>'
+            . '<p>ABV - ' . $beer['ABV'] . '</p>'
+            . '<p>Tastes - ' . $beer['comment'] . '</p>'
+            . '<p>First brewed - '. $beer['year'] . '</p>'
+            . '<p>Style - ' . $beer['style'] . '</p>'
             . '</div>';
     }
     echo $html;
