@@ -84,7 +84,7 @@ $beers = $query->fetchALL();
         <label for="image">Image</label>
         <input type="text" name="image" id="image">
 
-        <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
+        <button type="submit" name="submit" id="submit">Cheers, save my beer</button>
     </form>
 </div>
 </body>
