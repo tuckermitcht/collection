@@ -10,9 +10,6 @@ $query = $pdo->prepare(
 $query->execute();
 
 $beers = $query->fetchALL();
-//echo '<pre>';
-//print_r($beers);
-//echo '</pre>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +34,6 @@ $beers = $query->fetchALL();
 <body>
 <div class="topnav">
     <a class="addbeer" href="#addbeer">Add to Collection </a>
-
 </div>
 
 <div id="project-wrapper">
@@ -55,17 +51,16 @@ $beers = $query->fetchALL();
             . '<img src="' . $beer['imgsource'] . '" alt=beer>'
             . '<p>ABV - ' . $beer['ABV'] . '</p>'
             . '<p>Tastes - ' . $beer['comment'] . '</p>'
-            . '<p>First brewed - '. $beer['year'] . '</p>'
+            . '<p>First brewed - ' . $beer['year'] . '</p>'
             . '<p>Style - ' . $beer['style'] . '</p>'
             . '</div>';
     }
     echo $html;
     ?>
-
 </div>
 
 <h3>Add to Collections
-    <h3>
+    </h3>
         <div id="addbeer" class="addtocollection">
             <form method="POST" action="form.php">
                 <p>
@@ -95,6 +90,7 @@ $beers = $query->fetchALL();
                 <p>
                     <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
                 </p>
-            </form>
+        </div>
+        </form>
 </body>
 </html>

@@ -46,7 +46,7 @@ h1 {
     text-align: center;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #4a4949;
-padding-top: 4rem;
+    padding-top: 4rem;
 }
 
 .breweryname {
@@ -62,8 +62,7 @@ padding-top: 4rem;
     height: auto;
     margin: 2rem;
     border: 10px solid red;
-    border-color: #D8B589 ;
-
+    border-color: #D8B589;
 }
 
 img {
