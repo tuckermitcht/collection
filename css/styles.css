@@ -23,7 +23,7 @@ p {
 
 #brewery {
     border: 3px solid #7d6d5e;
-    background: #C9E4DE;
+    background: #c9e4de;
     border-radius: 10px;
     height: 2.5rem;
     text-decoration: none;
@@ -34,7 +34,7 @@ p {
     text-align: center;
     color: #1d1c1a;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #ffffff;
     border: 3px solid #7d6d5e;
     background: #F7D9C4;
     border-radius: 25px;
@@ -65,9 +65,9 @@ p {
 h1 {
     text-align: center;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #ffffff;
     border: 5px solid #7d6d5e;
-    background: #F7D9C4;
+    background: #f7d9c4;
     border-radius: 25px;
     margin: 80px 70px 0px 70px;
     padding: 0.5rem;
@@ -83,7 +83,7 @@ h1 {
 
 #rcorners1 {
     border-radius: 25px;
-    background: #73AD21;
+    background: #73ad21;
     padding: 20px;
     width: 200px;
     height: 150px;
@@ -97,7 +97,7 @@ h1 {
     height: auto;
     margin: 2rem;
     border: 5px solid #7d6d5e;
-    background: #C9E4DE;
+    background: #c9e4de;
     border-radius: 25px;
     padding: 20px;
 }
@@ -105,7 +105,7 @@ h1 {
 h3 {
     text-align: center;
     border: 5px solid #7d6d5e;
-    background: #F7D9C4;
+    background: #f7d9c4;
     border-radius: 25px;
     padding: 10px;
     margin-right: 1rem;
@@ -123,7 +123,7 @@ img {
     flex-direction: column;
     align-items: center;
     border: 5px solid #7d6d5e;
-    background: #F7D9C4;
+    background: #f7d9c4;
     border-radius: 25px;
     padding: 1rem;
 }
@@ -133,9 +133,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: #000000;
     border: 5px solid #7d6d5e;
-    background: #F7D9C4;
+    background: #f7d9c4;
     border-radius: 25px;
     padding: 10px;
     margin-right: 1rem;
@@ -153,7 +153,7 @@ img {
 #addbeerform #submit {
     margin-top: 1.5rem;
     border: 5px solid #7d6d5e;
-    background: #C9E4DE;
+    background: #c9e4de;
     border-radius: 10px;
     padding: 0.5rem;
     justify-self: center;
@@ -163,7 +163,7 @@ img {
 
 input {
     border: 3px solid #7d6d5e;
-    background: #C9E4DE;
+    background: #c9e4de;
     border-radius: 10px;
     height: 2.5rem;
     text-decoration: none;
@@ -181,7 +181,7 @@ h2 {
 h5 {
     text-align: center;
     border: 5px solid #7d6d5e;
-    background: #F7D9C4;
+    background: #f7d9c4;
     border-radius: 25px;
     padding: 10px;
     margin-right: 3rem;
@@ -195,7 +195,7 @@ h5 {
     }
 
     .addtocollection {
-        background: #F7D9C4;
+        background: #f7d9c4;
         border-radius: 25px;
         padding: 20px;
         margin-right: 8rem;
@@ -222,9 +222,9 @@ h5 {
     h1 {
         text-align: center;
         -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-color: #ffffff;
         border: 5px solid #7d6d5e;
-        background: #C9E4DE;
+        background: #c9e4de;
         border-radius: 25px;
         margin-top: 5rem;
         margin-right: 8rem;
