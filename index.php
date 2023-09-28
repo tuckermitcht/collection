@@ -8,8 +8,16 @@ $query = $pdo->prepare(
 );
 
 $query->execute();
-
 $beers = $query->fetchALL();
+
+$query = $pdo->prepare(
+    'SELECT `id`, `name` FROM `breweries`'
+);
+
+$query->execute();
+$breweries = $query->fetchAll();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +36,6 @@ $beers = $query->fetchALL();
     <link rel="icon" href="images/favicon.png" sizes="192x192">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
-
 </head>
 
 <body>
@@ -50,9 +57,10 @@ $beers = $query->fetchALL();
             . '<h2> ' . $beer['beername'] . '</h2>'
             . '<img src="' . $beer['imgsource'] . '" alt=beer>'
             . '<p>ABV - ' . $beer['ABV'] . '</p>'
-            . '<p>Tastes - ' . $beer['comment'] . '</p>'
-            . '<p>First brewed - ' . $beer['year'] . '</p>'
             . '<p>Style - ' . $beer['style'] . '</p>'
+            . '<p>First brewed - ' . $beer['year'] . '</p>'
+            . '<p>Tastes - ' . $beer['comment'] . '</p>'
+            . '<p>Rating - ' . $beer['rating'] . '</p>'
             . '</div>';
     }
     echo $html;
@@ -61,35 +69,44 @@ $beers = $query->fetchALL();
 
 <h3>Add to Collections</h3>
 <div id="addbeer" class="addtocollection">
-    <form method="POST" action="form.php">
-        <p>
-            <label for="brewery">Brewery </label>
-            <input type="text" name="brewery" id="brewery">
-        </p>
-        <p>
-            <label for="beer">Beer </label>
-            <input type="text" name="beer" id="beer">
-        </p>
-        <p>
-            <label for="abv">ABV</label>
-            <input type="text" name="abv" id="abv">
-        </p>
-        <p>
-            <label for="style">Style </label>
-            <input type="text" name="style" id="style">
-        </p>
-        <p>
-            <label for="country">Country </label>
-            <input type="text" name="country" id="country">
-        </p>
-        <p>
-            <label for="rating">Rating</label>
-            <input type="text" name="rating" id="rating">
-        </p>
-        <p>
-            <input type="submit" name="submit" id="submit" value="Cheers, save my beer">
-        </p>
+    <form autocomplete="off" method="POST" action="processform.php" id="addbeerform">
+
+        <label for="brewery">Brewery </label>
+        <select id="brewery" name="brewery">
+            <?php
+            $brewerieshtml = '';
+            foreach ($breweries as $brewery) {
+                $brewerieshtml .= '<option value="' . $brewery['id'] . '">' . $brewery['name'] . '</option>';
+            }
+            echo $brewerieshtml;
+            ?>
+        </select>
+
+        <label for="beer">Beer </label>
+        <input type="text" name="beer" id="beer">
+
+        <label for="abv">ABV</label>
+        <input type="text" name="abv" id="abv">
+
+        <label for="style">Style </label>
+        <input type="text" name="style" id="style">
+
+        <label for="brewed">First Brewed </label>
+        <input type="text" name="brewed" id="brewed">
+
+        <label for="tastes">Tastes </label>
+        <input type="text" name="tastes" id="tastes">
+
+        <label for="rating">Rating</label>
+        <input type="text" name="rating" id="rating">
+
+        <label for="image">Image</label>
+        <input type="text" name="image" id="image">
+
+        <button type="submit" name="submit" id="submit">Cheers, save my beer</button>
+
     </form>
 </div>
+<h5>© 2023 Mitch Tucker. All rights reserved. </h5>
 </body>
 </html>
