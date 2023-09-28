@@ -72,7 +72,6 @@ $breweries = $query->fetchAll();
     <form autocomplete="off" method="POST" action="processform.php" id="addbeerform">
 
         <label for="brewery">Brewery </label>
-        <!--        <input list="breweries" name="brewery" id="browser">-->
         <select id="brewery" name="brewery">
             <?php
             $brewerieshtml = '';
@@ -104,7 +103,7 @@ $breweries = $query->fetchAll();
         <label for="image">Image</label>
         <input type="text" name="image" id="image">
 
-        <button type="submit" name="submit" id="submit" >Cheers, save my beer </button>
+        <button type="submit" name="submit" id="submit">Cheers, save my beer</button>
 
     </form>
 </div>
