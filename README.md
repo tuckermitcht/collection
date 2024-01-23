@@ -15,7 +15,7 @@ Information from database must be visually displayed with the stats of each item
 Story 2
 As a: collector
 I want: to be able to add new items to my collection
-So that: I can expand my collection
+So that - I can expand my collection
 
 Requirements:
 
