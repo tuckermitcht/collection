@@ -19,5 +19,5 @@ So that: I can expand my collection
 
 Requirements:
 
-Must be able to add a new item to the collection
+Must be able to add and remove an new item to the collection
 Item must be available forever
