@@ -20,4 +20,4 @@ So that - I can expand my collection
 Requirements:
 
 Must be able to add a new item to the collection
-Item must be available forever.
+Item must be available forever
